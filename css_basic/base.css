@@ -10,7 +10,6 @@ html,
 body {
   height: 100%;
   min-height: 100%;
-  display: flex;
 }
 html,
 body,
@@ -143,8 +142,15 @@ h6,
 header {
   font-family: "Yeseva One", sans-serif;
 }
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
 article {
   flex-direction: row;
+  flex: 2;
+  overflow-y: auto;
 }
 header {
   border-bottom: 1px solid rgb(221, 221, 221);
@@ -155,6 +161,8 @@ header a {
 }
 aside {
   background: #fafafa;
+  flex: 1;
+  overflow-y: auto;
 }
 aside p {
   border: 1px solid #bbb;
